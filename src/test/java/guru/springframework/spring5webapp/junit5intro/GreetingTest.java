@@ -25,11 +25,13 @@ class GreetingTest {
     @Test
     void helloWorld() {
         System.out.println(greeting.helloWorld());
+        assertEquals("Hello World", greeting.helloWorld());
     }
 
     @Test
     void helloWorldWithName() {
         System.out.println(greeting.helloWorld("Milan"));
+        assertEquals("Hello Milan", greeting.helloWorld("Milan"));
     }
 
     @AfterEach
