@@ -1,5 +1,7 @@
 package guru.springframework.spring5webapp.petclinic.model;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.Is.is;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -26,5 +28,7 @@ class OwnerTest {
                     );
                 }
         );
+        //test hamcrest
+        assertThat(owner.getCity(), is("Budapest"));
     }
 }
