@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assumptions.assumeFalse;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
+import guru.springframework.spring5webapp.petclinic.ControllerTests;
 import guru.springframework.spring5webapp.petclinic.exceptions.ValueNotFoundException;
 import java.time.Duration;
 import org.hibernate.cfg.Environment;
@@ -19,8 +20,8 @@ import org.junit.jupiter.api.condition.EnabledOnJre;
 import org.junit.jupiter.api.condition.EnabledOnOs;
 import org.junit.jupiter.api.condition.JRE;
 import org.junit.jupiter.api.condition.OS;
-@Tag("controllers")
-class IndexControllerTest {
+
+class IndexControllerTest implements ControllerTests {
 
     IndexController controller;
 

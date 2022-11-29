@@ -3,6 +3,7 @@ package guru.springframework.spring5webapp.petclinic.controllers;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
+import guru.springframework.spring5webapp.petclinic.ControllerTests;
 import guru.springframework.spring5webapp.petclinic.fauxspring.Model;
 import guru.springframework.spring5webapp.petclinic.fauxspring.ModelImpl;
 import guru.springframework.spring5webapp.petclinic.model.Vet;
@@ -17,7 +18,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class VetControllerTest {
+class VetControllerTest implements ControllerTests {
 
     VetController controller;
     VetService service;
